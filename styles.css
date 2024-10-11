@@ -1,4 +1,110 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    /* 7798AB - blueish */
+    /* C3DBC5 - teal green */
+    /* F2CEE6 - readish */
+    /* E8DCB9 - yellowish */
+    /* 0d1b1e - dark(use white as text) */
+}
+
+body {
+    background-color: #7798ab;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    width: 60%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #c8d5dd;
+    color: #0d1b1e;
+    font-size: 3rem;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin: 1rem 0;
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 4rem;
+    width: 6rem;
+    height: 6rem;
+    border : 0;
+    border-radius: 0.5rem;
+    background-color: rgba(256, 256, 256, 0.8);
+}
+
+.black{
+    color: #0d1b1e;
+}
+
+.red{
+    color: #ffa742;
+}
+
+.blue{
+    color: #3f6cff;
+}
+
+.switch {
+    background-color: #0d1b1e;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: 0;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+
+#win-message{
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #f6ff78;
+    color: #0b0c3b;
+    padding: 0.5rem;
+    /* height: 2rem; */
+    border-radius: 0.5rem;
+    width: 50%;
+    font-size: 2.5rem;
+    margin: 0.5rem 0 0;
+}
+
+.hide{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        width: 90%;
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    #win-message{
+        font-size: 1.5rem;
+        width: 80%;
+    }
 }
